@@ -1,8 +1,9 @@
 /*레이아웃*/
-body{background: url(../img/header_bg.jpg) repeat-x center top;}
-#header {
-    
+body {
+    background: url(../img/header_bg.jpg) repeat-x center top;
 }
+
+#header {}
 
 #nav {
     background-color: #f6fdff;
@@ -10,6 +11,41 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
 
 #title {
     background-color: #eaf7fd;
+}
+
+#contents {}
+
+#contents .container {
+    position: relative;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+#cont_left {
+    float: left;
+    width: 250px;
+
+}
+
+#cont_center {
+    overflow: hidden;
+    min-height: 1000px;
+    height: 1000px;
+    margin-right: 250px;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+#cont_right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 250px;
+
+}
+
+#footer {
+    border-top: 1px solid #dbdbdb;
 }
 
 /*컨테이너*/
@@ -148,20 +184,20 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
     display: none;
 }
 
-.nav > div {
+.nav>div {
     float: left;
     width: 40%;
 }
 
-.nav > div:last-child {
+.nav>div:last-child {
     width: 20%;
 }
 
-.nav > div ol {
+.nav>div ol {
     overflow: hidden;
 }
 
-.nav > div li {
+.nav>div li {
     float: left;
     width: 50%;
     position: relative;
@@ -169,11 +205,11 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
     box-sizing: border-box;
 }
 
-.nav > div:last-child li {
+.nav>div:last-child li {
     width: 100%
 }
 
-.nav > div li:before {
+.nav>div li:before {
     content: '';
     width: 3px;
     height: 3px;
@@ -184,11 +220,11 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
     top: 6px;
 }
 
-.nav > div li a {
+.nav>div li a {
     position: relative;
 }
 
-.nav > div li a:after {
+.nav>div li a:after {
     content: '';
     width: 0;
     height: 1px;
@@ -201,11 +237,11 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
     display: inline-block;
 }
 
-.nav > div li:hover a:after {
+.nav>div li:hover a:after {
     width: 100%;
 }
 
-.nav > div h3 {
+.nav>div h3 {
     font-size: 18px;
     color: #25a2d0;
     font-weight: bold;
@@ -248,6 +284,19 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
 }
 
 
+/*컨텐츠 영역*/
+.column{padding: 15px; border-bottom: 1px solid #dbdbdb;}
+.column.col1{}
+.column.col2{}
+.column.col3{border-bottom: 0;}
+.column.col4{}
+.column.col5{}
+.column.col6{border-bottom: 0;}
+.column.col7{}
+.column.col8{}
+.column.col9{border-bottom: 0;}
+
+
 /*미디어쿼리*/
 /*화면너비 0 ~ 1220px*/
 @media (max-width: 1220px) {
@@ -262,6 +311,10 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
     .title .btn {
         right: 15px
     }
+    #contents .container{
+        border: 0
+    }
+
 }
 
 /*화면너비 0 ~ 1024px*/
@@ -269,29 +322,66 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
 
 /*화면너비 0 ~ 960px*/
 @media (max-width: 960px) {
-	.nav > div{ float: none; width: 100%;}
-	.nav > div:last-child{width: 100%;}
-	.nav > div li{width: 33.3333%;}
-	.nav > div:last-child li{width: 33.3333%;}
-	.nav > div ol {margin-bottom: 10px;}
+    .nav>div {
+        float: none;
+        width: 100%;
+    }
+
+    .nav>div:last-child {
+        width: 100%;
+    }
+
+    .nav>div li {
+        width: 33.3333%;
+    }
+
+    .nav>div:last-child li {
+        width: 33.3333%;
+    }
+
+    .nav>div ol {
+        margin-bottom: 10px;
+    }
+    #cont_center{margin-right: 0; border-right: 0;}
+    #cont_right{
+        position: static; width: 100%; border-top: 1px solid #dbdbdb;
+    }
 }
 
 
 /*화면너비 0 ~ 768px*/
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    #cont_left{float: none; width: 100%; }
+    #cont_center{border-left: 0;}
+}
 
 /*화면너비 0 ~ 600px*/
 @media (max-width: 600px) {
-	.nav > div li {width: 50%;}
-	.nav > div:last-child li{width: 50%;}
-	
-	.header {height: auto;}
-	.header .header_title{display: none;}
-	.header .header_icon{display: none;}
+    .nav>div li {
+        width: 50%;
+    }
 
-	.title .btn{display: none;}
+    .nav>div:last-child li {
+        width: 50%;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .header .header_title {
+        display: none;
+    }
+
+    .header .header_icon {
+        display: none;
+    }
+
+    .title .btn {
+        display: none;
+    }
+
 }
-
 
 /*화면너비 0 ~ 480px*/
 @media (max-width: 480px) {}
@@ -299,6 +389,11 @@ body{background: url(../img/header_bg.jpg) repeat-x center top;}
 
 /*화면너비 0 ~ 320 px*/
 @media (max-width: 320px) {
-	.nav > div li {width: 100%;}
-	.nav > div:last-child li{width: 100%;}
+    .nav>div li {
+        width: 100%;
+    }
+
+    .nav>div:last-child li {
+        width: 100%;
+    }
 }
