@@ -1,13 +1,15 @@
 /*레이아웃*/
+body{background: url(../img/header_bg.jpg) repeat-x center top;}
 #header {
-    background: url(../img/header_bg.jpg) repeat-x center top;
+    
 }
 
 #nav {
     background-color: #f6fdff;
 }
-#title{
-	background-color: #eaf7fd;
+
+#title {
+    background-color: #eaf7fd;
 }
 
 /*컨테이너*/
@@ -142,23 +144,24 @@
 /*전체메뉴*/
 .nav {
     overflow: hidden;
-    padding: 25px 0
+    padding: 25px 0;
+    display: none;
 }
 
-.nav>div {
+.nav > div {
     float: left;
     width: 40%;
 }
 
-.nav>div:last-child {
+.nav > div:last-child {
     width: 20%;
 }
 
-.nav>div ol {
+.nav > div ol {
     overflow: hidden;
 }
 
-.nav>div li {
+.nav > div li {
     float: left;
     width: 50%;
     position: relative;
@@ -166,11 +169,11 @@
     box-sizing: border-box;
 }
 
-.nav>div:last-child li {
+.nav > div:last-child li {
     width: 100%
 }
 
-.nav>div li:before {
+.nav > div li:before {
     content: '';
     width: 3px;
     height: 3px;
@@ -181,11 +184,11 @@
     top: 6px;
 }
 
-.nav>div li a {
+.nav > div li a {
     position: relative;
 }
 
-.nav>div li a:after {
+.nav > div li a:after {
     content: '';
     width: 0;
     height: 1px;
@@ -198,11 +201,11 @@
     display: inline-block;
 }
 
-.nav>div li:hover a:after {
+.nav > div li:hover a:after {
     width: 100%;
 }
 
-.nav>div h3 {
+.nav > div h3 {
     font-size: 18px;
     color: #25a2d0;
     font-weight: bold;
@@ -211,22 +214,42 @@
 
 
 /*타이틀*/
-.title{position: relative; text-align: center;}
-.title h2{font-family: 'Nanum Brush Script', cursive; font-size: 39px; color: #0093bd;
-	padding: 5px 0;}
-.title .btn{
-	position: absolute;; right: 0; top: 5px; width: 60px; height: 60px; line-height: 60px;
-	background: #3192bf; color: #fff; font-size: 35px; border-radius: 50%;
-	transition: all 0.3s ease;
+.title {
+    position: relative;
+    text-align: center;
 }
-.title .btn:hover{
-	box-shadow: 
-		0 0 0 3px rgba(71,154,191,0.9) inset,
-		0 0 0 100px rgba(0,0,0,0.1) inset;
+
+.title h2 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 39px;
+    color: #0093bd;
+    padding: 5px 0;
+}
+
+.title .btn {
+    position: absolute;
+    ;
+    right: 0;
+    top: 5px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #3192bf;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.title .btn:hover {
+    box-shadow:
+        0 0 0 3px rgba(71, 154, 191, 0.9) inset,
+        0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
 
 /*미디어쿼리*/
+/*화면너비 0 ~ 1220px*/
 @media (max-width: 1220px) {
     .container {
         width: 100%;
@@ -235,4 +258,47 @@
     .row {
         padding: 0 15px
     }
+
+    .title .btn {
+        right: 15px
+    }
+}
+
+/*화면너비 0 ~ 1024px*/
+@media (max-width: 1024px) {}
+
+/*화면너비 0 ~ 960px*/
+@media (max-width: 960px) {
+	.nav > div{ float: none; width: 100%;}
+	.nav > div:last-child{width: 100%;}
+	.nav > div li{width: 33.3333%;}
+	.nav > div:last-child li{width: 33.3333%;}
+	.nav > div ol {margin-bottom: 10px;}
+}
+
+
+/*화면너비 0 ~ 768px*/
+@media (max-width: 768px) {}
+
+/*화면너비 0 ~ 600px*/
+@media (max-width: 600px) {
+	.nav > div li {width: 50%;}
+	.nav > div:last-child li{width: 50%;}
+	
+	.header {height: auto;}
+	.header .header_title{display: none;}
+	.header .header_icon{display: none;}
+
+	.title .btn{display: none;}
+}
+
+
+/*화면너비 0 ~ 480px*/
+@media (max-width: 480px) {}
+
+
+/*화면너비 0 ~ 320 px*/
+@media (max-width: 320px) {
+	.nav > div li {width: 100%;}
+	.nav > div:last-child li{width: 100%;}
 }
