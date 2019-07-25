@@ -21,6 +21,14 @@ ul,li,ol{list-style: none;}
 h1,h2,h3,h4,h5,h6{font-size: 13px; font-weight: normal;}
 
 
+/*버튼 초기화*/
+button{border: 0;}
+
+
+
+/* 반응형 이미지 */
+img {width: 100%;}
+
 /* IR 효과 */
 /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
 .ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} 
