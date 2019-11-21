@@ -608,7 +608,7 @@ position: absolute; left: 0; bottom: -30px; opacity: 1; transition: all .3s ease
     #cont_right {
         position: static;
         width: 100%;
-        border-top: 1px solid #dbdbdb;
+        
     }
     .nav>div {
         float: none;
@@ -630,7 +630,10 @@ position: absolute; left: 0; bottom: -30px; opacity: 1; transition: all .3s ease
     .nav>div ol {
         margin-bottom: 10px;
     }
-
+    #cont_right{overflow: hidden; border-top: 1px solid #dbdbdb}
+    #cont_right .column{float: left; width: 33.3333%; box-sizing: border-box;}
+    #cont_right .column.col7{border-right: 1px solid #dbdbdb; border-bottom: 0;}
+    #cont_right .column.col8{border-right: 1px solid #dbdbdb; border-bottom: 0;}
 
 }
 
@@ -729,6 +732,11 @@ position: absolute; left: 0; bottom: -30px; opacity: 1; transition: all .3s ease
     .slider figcation span{font-size: 14px; }
     .square a{width: 49%;}
     .square a:nth-child(5){display: none;}
+
+
+    #cont_right .column{width: 50%;}
+    #cont_right .column.col8{border-right:0}
+    #cont_right .column.col9{display: none;}
 }
 
 
@@ -746,6 +754,8 @@ position: absolute; left: 0; bottom: -30px; opacity: 1; transition: all .3s ease
         width: 100%;
     }
     .square a{width: 100%; margin-right: 0; margin-left: 0;}
+    #cont_right .column{width: 100%}
+    #cont_right .column.col7{border-right: 0; border-bottom: 1px solid #dbdbdb}
     
 }
 
