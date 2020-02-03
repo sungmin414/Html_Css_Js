@@ -653,7 +653,7 @@ left: 0; top: 2px;}
 .side3:hover figcaption{
     transform: translate(-50%, -50%) rotate(0deg); opacity: 1;
 }
-}
+
 
 /*미디어쿼리*/
 /*화면너비 0 ~ 1220px*/
