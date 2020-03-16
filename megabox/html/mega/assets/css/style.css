@@ -1,0 +1,69 @@
+/*소스볼때 한글보이게 해줌*/
+@charset "utf-8";
+
+/*레이아웃*/
+#header {
+    width: 100%;
+    height: 63px;
+    background: rgba(0,0,0,0);
+    border-bottom: 1px solid #c6c6c6;
+}
+
+/*가운데 영역*/
+#header .container {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0);
+}
+
+/*로우 영역*/
+#header .row {
+    padding: 0 24px;
+}
+
+
+/*헤더 영역*/
+#header .header {
+}
+#header h1 {
+    float: left;
+}
+#header h1 a {
+}
+#header em {
+    padding: 15px 8px 5px 0;
+    display: inline-block;
+}
+#header em img {
+    width: 155px;
+    
+}
+#header strong {
+    display: block;
+    position: absolute;
+    left: 194px;
+    top: 24px;
+}
+#header strong img {
+    width: 126px;
+}
+#header .nav {
+    float: right;
+}
+#header ul {
+    border-left: 1px solid #c6c6c6;
+}
+#header li {
+    float: left;
+    width:103px;
+    text-align: center;
+    border-right: 1px solid #c6c6c6;
+}
+#header li a {
+    display: block;
+    padding: 19px 10px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #444;
+}
