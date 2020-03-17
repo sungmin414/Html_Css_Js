@@ -306,8 +306,8 @@
 .movie .movie_chart > div > div:last-child{margin-right: 0;}
 .movie .movie_chart > div > div .poster{position: relative;}
 .movie .movie_chart > div > div .poster img{display: block;}
-.movie .movie_chart > div > div .poster .rank{position: absolute; top: 17px; left: 0;width:  50px; height: 50px; line-height: 50px; background-color: #38116a; text-align: center;}
-.movie .movie_chart > div > div .poster .rank strong{color: #fff;}
+.movie .movie_chart > div > div .poster .rank{position: absolute; top: 17px; left: 0;width:  50px; height: 50px; line-height: 50px; background-color: #38116a; text-align: center; font-size: 22px; }
+.movie .movie_chart > div > div .poster .rank strong{color: #fff; text-shadow: 2px 2px 3px rgba(0,0,0,1)}
 .movie .movie_chart > div > div .poster .mx{position: absolute; top: 17px; right: 17px;}
 .movie .movie_chart > div > div .info{background: #fff; padding: 17px; border: 1px solid #d9d9d9;}
 .movie .movie_chart > div > div .info h3{color: #333; font-size: 30px; font-weight: 700; margin-bottom: 20px;}
@@ -423,3 +423,4 @@
 @media (max-width: 480px) {}
 
 @media (max-width: 320px) {}
+
