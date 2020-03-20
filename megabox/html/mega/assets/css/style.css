@@ -21,6 +21,8 @@
 
 #moive {}
 
+#event{}
+
 /*가운데 영역*/
 .container {
     position: relative;
@@ -449,6 +451,15 @@
 }
 
 
+/*이벤트*/
+.event{overflow: hidden; padding: 100px 0;}
+.event img{display: block;}
+.event h2{font-size: 30px; font-weight: 500; margin-bottom: 20px;}
+.event .event_left{overflow: hidden; float: left; width: 66%; margin-right: 2%; }
+.event .event_left .event_box1{float: left; width: 50%;}
+.event .event_left .event_box2{float: left; width: 50%}
+.event .event_right{float: left; width: 32%; }
+
 
 
 /*미디어쿼리*/
@@ -554,10 +565,11 @@
     .row {
         padding: 0 16px;
     }
-
+    
+    #movie {background: none;}
     #movie .row {
         background: #fff;
-        margin: 24px;
+        margin: 24px 24px 0 24px;
         padding: 24px;
     }
 
@@ -637,6 +649,12 @@
     .header h1 strong {
         display: none;
     }
+    
+    #event .row{padding: 24px;}
+    .event{padding: 24px; background: #fff;}
+    .event h2{ font-size: 24px; font-weight: 700;}
+    .event .event_left{width: 100%;}
+    .event .event_right{display: none;}
 }
 
 @media (max-width: 600px) {
@@ -787,7 +805,11 @@
     .movie .movie_chart > div > div > div .info .info_btn a:last-child {
         display: none;
     }
-
+    
+    #event .row{padding: 0 8px;}
+    .event{padding: 16px;}
+    .event h2{font-size: 18px; margin-bottom: 10px;}
+    
 }
 
 @media (max-width: 480px) {}
