@@ -578,6 +578,15 @@
 .notice ul li ul li dd {color: #777; padding-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 
 
+/*할인카드*/
+.card{padding: 17px;}
+.card ul{}
+.card ul li{position: relative; border: 1px solid #d7d7d7; padding: 17px; margin-bottom: 17px; min-height: 102px; box-sizing: border-box;}
+.card ul li span{position: absolute; left: 17px; top: 17px;}
+.card ul li span img{width: 105px;}
+.card ul li strong{display: block; font-size: 18px; padding-left: 120px; color: #777;}
+.card ul li em{display: block; font-size: 14px; padding-left: 120px; color: #777; font-weight:300;}
+
 
 
 /*미디어쿼리*/
