@@ -1,6 +1,13 @@
 @charset "utf-8";
 /*소스볼때 한글보이게 해줌*/
 
+/*스킵메뉴*/
+#skip{position: relative;}
+#skip a{position: absolute; left: 0; top: -40px; width: 140px; border: 1px solid #fff; color: #fff; text-align: center; background: #333; line-height: 30px;}
+#skip a:active,
+#skip a:focus{top: 0;}
+
+
 /*레이아웃*/
 #header {
     width: 100%;
@@ -840,10 +847,11 @@
 .notice ul li ul li dd {
     color: #777;
     padding-top: 3px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
+    
 }
+.notice ul li ul li a{border: 0; padding: 0; width: 100%; overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;}
 
 
 /*할인카드*/
